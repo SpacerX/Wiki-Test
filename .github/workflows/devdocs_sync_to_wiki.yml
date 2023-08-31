@@ -1,4 +1,4 @@
-name: Sync_devDocs_To_Wiki
+name: devDocs_sync_to_Wiki
 # Synchronisiert das Wiki mit ./docs (info:https://github.com/newrelic/wiki-sync-action/tree/main)
 
 on:
