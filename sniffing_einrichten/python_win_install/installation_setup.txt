@@ -1,0 +1,85 @@
+
+Download von https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+
+Geladene python-3.10.11-amd64.exe starten
+
+[setup_1.png] -> "Use admin privileges when installing py.exe" aktivieren.
+              -> "Add python.exo to PATH" aktivieren
+              -> "Install Now"
+
+[setup_2.png] -> Installation läuft.
+
+[setup_3.png] -> Setup was successfull 
+              -> "Disable path length limit"
+              -> "Close"
+
+-> *** Restart Windows ***
+
+Systempath anpassen.
+--------------------
+- Suche im Startmenu nach “Systemvariablen”
+
+[path_1.png] -> "Systemvariablen bearbeiten" auswählen
+
+[path_2.png] -> im öffnenden Fenster "Umgebungsvariablen..." wählen
+
+[path_3.png] -> Fenster Umgebungsvariablen öffnet.
+             -> Bereich "Benutzervariablen" -> "Path" doppelklick
+
+[path_4.png] -> der Path "C:\Users\Webboy\AppData\Local\Programs\Python\Python310\"
+                und "C:\Users\Webboy\AppData\Local\Programs\Python\Python310\Scripts\"
+                sollte vorhanden sein und auf die Pytho Installation für Benutzer zeigen.
+
+pipx für Python Nachinstallieren
+--------------------------------
+
+PowerShell mit Admirechten öffnen.
+-> nacheinander Ausführen:
+
+PS C:\WINDOWS\system32> cd C:\
+
+PS C:\> py -m pip --version
+pip 23.0.1 from C:\Users\Webboy\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10)
+
+PS C:\> py -m pip install pipx
+Collecting pipx
+  Downloading pipx-1.2.0-py3-none-any.whl (57 kB)
+     ---------------------------------------- 57.8/57.8 kB 3.0 MB/s eta 0:00:00
+Collecting userpath>=1.6.0
+  Downloading userpath-1.9.0-py3-none-any.whl (9.0 kB)
+Collecting packaging>=20.0
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ---------------------------------------- 48.9/48.9 kB ? eta 0:00:00
+Collecting colorama>=0.4.4
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting argcomplete>=1.9.4
+  Downloading argcomplete-3.1.1-py3-none-any.whl (41 kB)
+     ---------------------------------------- 41.5/41.5 kB ? eta 0:00:00
+Collecting click
+  Downloading click-8.1.6-py3-none-any.whl (97 kB)
+     ---------------------------------------- 97.9/97.9 kB 5.5 MB/s eta 0:00:00
+Installing collected packages: packaging, colorama, argcomplete, click, userpath, pipx
+Successfully installed argcomplete-3.1.1 click-8.1.6 colorama-0.4.6 packaging-23.1 pipx-1.2.0 userpath-1.9.0
+
+[notice] A new release of pip is available: 23.0.1 -> 23.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+-> Bei New Release Meldung update ausführen.
+
+PS C:\> py -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\webboy\appdata\local\programs\python\python310\lib\site-packages (23.0.1)
+Collecting pip
+  Downloading pip-23.2.1-py3-none-any.whl (2.1 MB)
+     ---------------------------------------- 2.1/2.1 MB 13.3 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.0.1
+    Uninstalling pip-23.0.1:
+      Successfully uninstalled pip-23.0.1
+Successfully installed pip-23.2.1
+
+PS C:\>
+
+-> [ps_pipx_install.png]
+
+

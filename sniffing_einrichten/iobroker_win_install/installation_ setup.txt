@@ -1,0 +1,83 @@
+Download ioBroker für Windows https://www.iobroker.net/#de/download
+
+iobroker-installer-2.2.2.exe starten.
+
+Sprache Deutsch auswählen.
+
+[installation_1.png] -> Weiter
+
+[installation_2.png] -> Ich akzeptiere die Vereinbarung -> Weiter
+
+[installation_3.png] -> Ziel-Ordner wählen -> C\ioBroker -> Weiter
+
+[installation_4.png] -> Weiter
+
+[installation_5.png] -> Node.js version aktualisieren. -> ausgewählt
+                        Zugriff auf ioBroker von außen ermöglichen (Windows Firewall) -> ausgewählt.
+                        Starte ioBroker Service automatisch beim Windows Start -> nicht ausgewählt
+                        Datenübernahme aus anderer ioBroker installation -> nicht ausgewählt
+                     -> Weiter
+
+[installation_6.png] -> Bereit zur Installation -> Installieren.
+
+[installation_7.png] -> Installiere Node.js ...
+
+[installation_8.png] -> Installiere Node.js ...
+
+[installation_9.png] -> Installation Beendet.
+                        ioBroker Admin im Browser öffnen -> ausgewählt
+                     -> Fertigstellen
+
+[setup_1.png] -> Asssistent Starten >
+
+[setup_2.png] -> Lizenzvereinbarungen
+                 Sprache: Deutsch
+                 Ich bin mit der Erfassung anonymer Statistiken und der automatischen
+                 Meldung von Abstürzen einverstanden -> Auswählen
+              -> ZUSTIMMEN
+
+[setup_3.png] -> Passwort
+                 Administratorname und Passwort festlegen
+                 Administratorname: admin
+                 Administrator-Passwort: 20UndRbeGleich68
+              -> DAS ADMINISTRATORKENNWORT FESTLEGEN
+
+[setup_4.png] -> Authentifizierung
+                 Authentifizierung in Admin -> ausgewählt
+                 Zertifikate -> Kein SSL
+              -> ANWENDEN
+
+[setup_5.png] -> Portweiterleitung
+              -> VERSTANDEN 
+
+[setup_6_Popup.png] -> localhost:8081 möchte: Deinen Standort abrufen
+                    -> zulassen
+
+[setup_6.png] -> Einstellungen
+                 Land: Deutschland
+                 Stadt: Bitterfeld-Wolfen
+                 Adresse: Bitterfelder Str. 42
+                 Die Woche beginnt mit: Montag
+              -> SPEICHERN
+
+[setup_7.png] -> Abschließen
+              -> ABSCHLIESSEN
+
+[start_1.png] -> Geräte und Dienste finden
+              -> SCHLIESSEN
+
+[start_2.png] -> ioBroker Bereit.
+
+[startmenu.png] -> Starten und Stoppen des ioBroker Service
+
+
+
+
+
+
+
+
+
+
+
+

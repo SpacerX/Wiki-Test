@@ -1,0 +1,21 @@
+iPhone Root-Zertifikat einrichten
+
+-> In Safari Adresse "mitm.it" aufrufen.
+   -  [safari_mitm.it.png] -> hier IOS aufwählen - "Get mitmproxy-ca-cert.pem" auswählen.
+   -  [profil_zulassen.png] -> Popup: Webseite versucht Konfigurationsprofil zu laden -> Zulassen
+   -  [profil_geladen.png] ->Popup: Profil geladen -> Schließen.
+   -  Safari beenden.
+
+-> Einstellungen->Allgemein-VPN und Geräteverwaltung
+   -  [vpn_verwaltung.png] -> "mitmproxy" wählen
+   -  Im Profil [profil_ungeprueft.png] -> "Mehr Details" wählen.
+   -> oben/rechts Installieren wählen.
+   -> [iphone-code.png] -> iPhone Code eingabe.
+   -> [zertifikat_hinzufuegen.png] -> oben/rechts Installieren wählen.
+   -> Popup [installieren_quit.png] -> Installation bestätigen. -> Installieren wählen    
+   -  Nun ist das Zertifikat überprüft. [profil_installiert.png]
+
+-> iPhone Root-Zertifikat:
+   -  Einstellungen->Allgemein-Info ganz Unten "Zertifikatsvertrauenseinstellungen"
+   -  [root_zertifikat_aktiv.png] -> mitmproxy aktivieren
+   -> Popup auf weiter.

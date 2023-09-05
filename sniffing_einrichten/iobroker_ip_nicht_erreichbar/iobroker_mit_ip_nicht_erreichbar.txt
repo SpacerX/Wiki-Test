@@ -1,0 +1,17 @@
+- Suche im Startmenu nach “firewall” 
+
+[firewall_1.png] -> “Windows Defender Firewall mit erweiterter Sicherheit" auswählen.
+
+[firewall_2.png] -> im öffnenden Fenster mit der rechten Maustaste auf “Eingehende Regeln”
+
+[firewall_3.png] -> rechts "Neue Regel..." auswählen.
+
+[firewall_4.png] -> Regeltyp: Programm
+                 -> Programmpfad: %SystemDrive%\iobroker\daemon\iobroker.exe
+                 -> Aktion -> Weiter
+                 -> Profil -> Weiter
+                 -> Name: ioBroker -> Fertig stellen
+
+- Eine weitere Regel nach dem gleichen Schema brauchen wir für
+  Programmpfad: %ProgramFiles%\nodejs\node.exe
+  Name: Node.js

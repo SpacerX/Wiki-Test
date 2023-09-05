@@ -1,0 +1,36 @@
+Sniffing Roborock App iPhone
+
+-> ioBroker Windows Installieren
+
+-> Roborock-Adapter von https://github.com/copystring/ioBroker.roborock/tree/dev Installieren
+  und mit Roborock Sauger verbinden.
+
+-> Python Windows Installieren.
+
+-> mitmproxy Installieren
+
+-> "start_mitmweb.bat" erstellen.
+   -----
+   %userprofile%\.local\bin\mitmweb.exe --listen-port 9090 --web-port 9091 --mode wireguard -s C:\ioBroker\node_modules\iobroker.roborock\lib\sniffing\mitmproxy_roborock.py
+   Pause
+   Exit
+   -----
+
+-> WireGuard App auf iPhone installieren.
+
+-> "Start mitmproxy Roborock.bat als Admin ausführen.
+   - Shell Fenster öffnet sich. [mitmproxy_cmd.png]
+   - Browser öffnet mitmproxy-Seite mit QR-Code für WireGuard. [mitmproxy_qr-code.png]
+
+-> iPhone WireGuard öffnen und neuen Tunnel mit Plus hinzufügen. [wireguard_tunnel_+.png]
+   - [wireguard_qr-code.png] "Aus QR-Code erstellen wählen und QR-Code scannen.
+   - Popup [wireguard_tunnelname.png] Tunnel benennen dann Speichern.
+
+
+-> iPhone WireGuard Tunnel zu mitmproxy aktivieren
+
+-> iPhone Root-Zertifikat einrichten.
+
+-> iPhone WireGuard Tunnel zu mitmproxy deaktivieren
+
+Nun sollte alles bereit zum Sniffen sein.
